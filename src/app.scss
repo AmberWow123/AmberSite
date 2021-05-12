@@ -1,0 +1,19 @@
+.app{
+    height: 100vh;
+
+    .sections{
+        width: 100%;
+        height: calc(100vh - 70px);
+        background-color: sienna;
+        position: relative; // menubar's position: top
+                            // .sections is under <menubar/>
+                            // then position: relative 
+        top: 70px;          // with this code
+                            // it will make the components inside the sections block
+                            // to appear below the menubar
+        > *{
+            width: 100%;
+            height: calc(100vh - 70px);
+        }
+    }
+}
