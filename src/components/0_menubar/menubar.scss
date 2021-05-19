@@ -48,9 +48,11 @@
         }
 
         .right{
-
+            
 
             .hamburger{
+                overflow: hidden;   // sometimes there is an unexpected scroll bar
+                                    // this could help to hide the scroll bar
                 width: 32px;
                 height: 25px;
                 display: flex;
@@ -62,6 +64,8 @@
                     width: 100%;
                     height: 3px;
                     background-color: $mainColor;
+                    transform-origin: left;
+                    transition: all 2s ease;
                 }
             }
         }
@@ -75,20 +79,24 @@
 
         .hamburger{
             
+            overflow: hidden;   // sometimes there is an unexpected scroll bar
+                                // this could help to hide the scroll bar
             span{
                 // means line 1
                 &:first-child{
                     background-color: white;
+                    transform: rotate(45deg);
                 }
 
                 // means line 2
                 &:nth-child(2){
-                    opacity: 0;
+                    opacity: 0; // make it disappear
                 }
 
                 // means line 3
                 &:last-child{
                     background-color: white;
+                    transform: rotate(-45deg);
                 }
             }
         }

@@ -3,9 +3,10 @@ import "./menubar.scss"
 // import MailIcon from '@material-ui/icons/Mail';
 import {Person, Mail} from "@material-ui/icons"
 
-export default function Menubar() {
+export default function Menubar({ menuOpen, setMenuOpen }) {
     return (
-        <div className="menubar  active">
+        // if open menu, then set it as active
+        <div className={"menubar " + (menuOpen && "active")}>   
             <div className="wrapper">
                 <div className="left">
                     {/* make a link for such that each click will return back to the intro page */}
@@ -21,7 +22,10 @@ export default function Menubar() {
                 </div>
                 <h1>Hello</h1>
                 <div className="right">
-                    <div className="hamburger">
+                    {/* menuOpen and setMenuOpen's default values are false
+                        whenever it is clicked, setMenuOpen will have the opposite value
+                        of menuOpen */}
+                    <div className="hamburger" onClick={()=>setMenuOpen(!menuOpen)}>
                         <span className="line1"></span>
                         <span className="line2"></span>
                         <span className="line3"></span>
