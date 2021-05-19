@@ -5,7 +5,7 @@ import {Person, Mail} from "@material-ui/icons"
 
 export default function Menubar() {
     return (
-        <div className="menubar">
+        <div className="menubar  active">
             <div className="wrapper">
                 <div className="left">
                     {/* make a link for such that each click will return back to the intro page */}
@@ -21,7 +21,11 @@ export default function Menubar() {
                 </div>
                 <h1>Hello</h1>
                 <div className="right">
-                    this is right
+                    <div className="hamburger">
+                        <span className="line1"></span>
+                        <span className="line2"></span>
+                        <span className="line3"></span>
+                    </div>
                 </div>
             </div>
         </div>

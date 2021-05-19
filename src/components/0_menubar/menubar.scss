@@ -46,5 +46,51 @@
                 }
             }
         }
+
+        .right{
+
+
+            .hamburger{
+                width: 32px;
+                height: 25px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                cursor: pointer;    
+
+                span{
+                    width: 100%;
+                    height: 3px;
+                    background-color: $mainColor;
+                }
+            }
+        }
+    }
+
+    // if active
+    &.active{
+        background-color: $mainColor;
+        color: white;
+
+
+        .hamburger{
+            
+            span{
+                // means line 1
+                &:first-child{
+                    background-color: white;
+                }
+
+                // means line 2
+                &:nth-child(2){
+                    opacity: 0;
+                }
+
+                // means line 3
+                &:last-child{
+                    background-color: white;
+                }
+            }
+        }
     }
 }
