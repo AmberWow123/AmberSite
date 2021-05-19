@@ -11,6 +11,7 @@
         top: 70px;          // with this code
                             // it will make the components inside the sections block
                             // to appear below the menubar
+        scroll-behavior: smooth;
         scroll-snap-type: y mandatory;
         scrollbar-width: none;  // for firefox
         &::-webkit-scrollbar{   // for the rest
