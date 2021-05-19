@@ -9,6 +9,8 @@
     top: 0;
     z-index: 2;     // to always stay on the upper part of the screen
 
+    transition: all 1s ease;    // make the transition to be much more smooth
+
     .wrapper{
         padding: 10px 30px; // top - bottom: 10 px
                             // left - right: 30 px
@@ -71,7 +73,7 @@
         }
     }
 
-    // if active
+    // if active, change the color mode
     &.active{
         background-color: $mainColor;
         color: white;
