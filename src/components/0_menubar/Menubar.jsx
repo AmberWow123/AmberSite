@@ -20,7 +20,7 @@ export default function Menubar({ menuOpen, setMenuOpen }) {
                         <span>eatingwow@gmail.com</span>
                     </div>
                 </div>
-                <h1>Hello</h1>
+                
                 <div className="right">
                     {/* menuOpen and setMenuOpen's default values are false
                         whenever it is clicked, setMenuOpen will have the opposite value

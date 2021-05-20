@@ -1,9 +1,10 @@
 import Menubar from "./components/0_menubar/Menubar";
 import Intro from "./components/1_intro/Intro";
-import Skills from "./components/2_skills/Skills";
-import Materials from "./components/3_materials/Materials";
-import Projects from "./components/4_projects/Projects";
-import Contact from "./components/5_contact/Contact";
+import Skills from "./components/4_skills/Skills";
+import Materials from "./components/5_materials/Materials";
+import Projects from "./components/3_projects/Projects";
+import Contact from "./components/6_contact/Contact";
+import About from "./components/2_about/About";
 import "./app.scss"
 import { useState } from "react";
 import SideMenu from "./components/0.5_sidemenu/SideMenu";
@@ -19,9 +20,10 @@ function App() {
       <SideMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <div className="sections">
         <Intro/>
+        <About/>
+        <Projects/>
         <Skills/>
         <Materials/>
-        <Projects/>
         <Contact/>
       </div>
     </div>

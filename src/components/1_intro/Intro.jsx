@@ -32,7 +32,7 @@ export default function Intro() {
                         <span ref={textRef}></span>
                     </h3>
                 </div>
-                <a href="#skills">
+                <a href="#about">
                     <ExpandMoreIcon className="iconExpand"/>
                     {/* use image as a button to go to project section */}
                     {/* <img arc="assets/xxx.jpg" alt=""></img> */}

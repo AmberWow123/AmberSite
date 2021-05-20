@@ -18,10 +18,13 @@
             display: none;
         }
 
+        // for each element inside sections
         > *{
             width: 100vw;
             height: calc(100vh - 70px);
             scroll-snap-align: start;
         }
+        // comment out because some sections are extend page
+        // and some are one page
     }
 }
