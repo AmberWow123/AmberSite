@@ -1,6 +1,6 @@
-import "./aboutList.scss"
+import "./bgList.scss"
 
-export default function AboutList({title, active, setSelected, id}) {
+export default function BgList({title, active, setSelected, id}) {
     return (
         // list (li) out each argument that is passed in
         // if active, then it's "aboutList active"

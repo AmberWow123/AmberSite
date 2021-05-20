@@ -1,4 +1,4 @@
-import AboutList from "../2_about_list/AboutList";
+import AboutList from "../2_bg_list/BgList";
 import "./about.scss"
 import { useEffect, useState } from "react";
 
