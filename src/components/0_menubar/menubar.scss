@@ -7,7 +7,7 @@
     color: $mainColor;  // should be the same as global's main color
     position: fixed;    
     top: 0;
-    z-index: 2;     // to always stay on the upper part of the screen
+    z-index: 3;     // to always stay on the upper part of the screen
 
     transition: all 1s ease;    // make the transition to be much more smooth
 

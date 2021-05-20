@@ -1,0 +1,29 @@
+@import "../../global.scss";
+
+.sideMenu{
+
+    width: 300px;
+    height: 100vh;
+    background-color: $mainColor;
+    position: fixed;
+    top: 0;
+    right: -300px;  // because width is 300px
+                    // at first, this side menu should hide
+                    // then, after hamburger is clicked
+                    // this side menu will appear
+    z-index: 2; // should under the top menu bar
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    transition: all 1s ease;
+
+    &.active{
+        right: 0;   // side menu will appear after hamburger is clicked
+        // transition: all 1s ease;     if we put transition here, then the smooth transition 
+        //                              is only appear when side menu appear
+        //                              when side menu is about to hide back beyond the right margin
+        //                              there won't be any transition, the side menu will just disappear, unsmooth...
+    }
+}
