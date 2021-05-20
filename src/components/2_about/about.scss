@@ -15,20 +15,6 @@
         padding: 0;
         list-style: none;
         display: flex;  // make them (about me, education, experience) horizontal
-
-
-        li{
-            font-size: 18px;
-            margin: 50px;
-            padding: 7px;
-            border-radius: 10px;
-            cursor: pointer;
-
-            &.active{
-                background-color: $mainColor;
-                color: white;
-            }
-        }
     }
 
     .container{

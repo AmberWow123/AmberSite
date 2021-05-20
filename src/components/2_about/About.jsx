@@ -1,13 +1,33 @@
+import AboutList from "../2_about_list/AboutList";
 import "./about.scss"
 
 export default function About() {
+
+    const list = [
+        {
+            id: "aboutme",
+            title: "About Me",
+        },
+        {
+            id: "education",
+            title: "Education",
+        },
+        {
+            id: "experience",
+            title: "Experience",
+        },
+    ];
+
     return (
         <div className="about" id="about">
             <h1>Yi-Ting, Wang</h1>
             <ul>
-                <li className="active">About Me</li>
-                <li>Education</li>
-                <li>Experience</li>
+                {/* item means each element in this list
+                    then, it passes title of each element
+                    to AboutList.jsx */}
+                {list.map( item => (
+                    <AboutList title = {item.title} />
+                ))}
             </ul>
             <div className="container">
                 <div className="item">
