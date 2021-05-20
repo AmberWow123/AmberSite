@@ -5,13 +5,13 @@ import { useEffect, useRef } from "react";
 
 export default function Intro() {
 
+    // for ityped function
     const textRef = useRef();
-
     useEffect(() => {
         init(textRef.current, {
             showCursor:false,
-            backDelay: 1000,
-            backSpeed: 50,
+            backDelay: 1000,        // wait for a while
+            backSpeed: 50,          // go back faster
             strings: ["Computer Science", "Incoming Graduate", "Taiwanese", "Tainan City", "April, 28th"]
         });
     }, [])
