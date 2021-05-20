@@ -1,8 +1,19 @@
 import "./intro.scss"
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import { init } from 'ityped'
+import { init } from 'ityped';
+import { useEffect, useRef } from "react";
 
 export default function Intro() {
+
+    const textRef = useRef();
+
+    useEffect(() => {
+        init(textRef.current, {
+            showCursor:false,
+            strings: ["Computer Science", "Incoming Graduate"]
+        });
+    }, [])
+
     return (
         <div className="intro" id="intro">
             <div className="left">
@@ -14,7 +25,7 @@ export default function Intro() {
                 <div className="wrapper">
                     <h2>UCSD Computer Science Undergrad</h2>
                     <h1>Yi-Ting, Wang</h1>
-                    <h3>sdasdasd <span>ABC</span></h3>
+                    <h3>sdasdasd <span ref={textRef}></span></h3>
                 </div>
                 <a href="#skills">
                     <ExpandMoreIcon className="icon"/>
