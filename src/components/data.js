@@ -9,6 +9,16 @@ export const locationData = [
         title: "Shanghai",
         img: "https://th.bing.com/th/id/R3863b48e39bec5088b17ab9e9393bcd0?rik=As%2f9KzDw8sNYeg&pid=ImgRaw",
     },
+    {
+        id:3,
+        title: "Cupertino",
+        img: "https://g5-assets-cld-res.cloudinary.com/image/upload/x_0,y_261,h_1210,w_2200,c_crop/q_auto,f_auto,c_fill,g_center,h_1100,w_2000/v1569524057/g5/g5-c-iqbdxrhy-acco-management-co-client/g5-cl-57b5vdvf2-glenbrook/uploads/IMG_1391a_1_djgoeb.jpg",
+    },
+    {
+        id:4,
+        title: "San Diego",
+        img: "https://cdn.turkishairlines.com/m/b4ff11fdcdb737c/original/1400-660-jpg.jpg",
+    },
 ];
 
 export const educationData = [
