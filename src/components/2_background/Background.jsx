@@ -1,5 +1,5 @@
 import BgList from "../2_bg_list/BgList";
-import "./about.scss"
+import "./background.scss"
 import { useEffect, useState } from "react";
 
 import {
@@ -9,7 +9,7 @@ import {
 
 import styled from "styled-components";
 
-export default function About() {
+export default function Backgound() {
 
     // if selected (location, education, experience)
     const [selected, setSelected] = useState("location")
@@ -50,7 +50,7 @@ export default function About() {
                     //  it will run the useeffect
 
     return (
-        <div className="about" id="about">
+        <div className="background" id="background">
             <h1>Yi-Ting, Wang</h1>
             <ul>
                 {/* item means each element in this list

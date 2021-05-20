@@ -4,7 +4,7 @@ import Skills from "./components/4_skills/Skills";
 import Materials from "./components/5_materials/Materials";
 import Projects from "./components/3_projects/Projects";
 import Contact from "./components/6_contact/Contact";
-import About from "./components/2_about/About";
+import Background from "./components/2_background/Background";
 import "./app.scss"
 import { useState } from "react";
 import SideMenu from "./components/0.5_sidemenu/SideMenu";
@@ -20,7 +20,7 @@ function App() {
       <SideMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <div className="sections">
         <Intro/>
-        <About/>
+        <Background/>
         <Projects/>
         <Skills/>
         <Materials/>

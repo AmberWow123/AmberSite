@@ -12,7 +12,12 @@ export default function Intro() {
             showCursor:false,
             backDelay: 1000,        // wait for a while
             backSpeed: 50,          // go back faster
-            strings: ["Computer Science", "Incoming Graduate", "Taiwanese", "Tainan City", "April, 28th"]
+            strings: ["UC San Diego", "Computer Science", 
+                "#TritonGrad2021", "Incoming Graduate", 
+                "Taiwanese", "Tainan City", 
+                "April, 28th", "Basketball", 
+                "#GG4eva", "Me&U"
+            ]
         });
     }, [])
 
@@ -25,14 +30,14 @@ export default function Intro() {
             </div>
             <div className="right">
                 <div className="wrapper">
-                    <h2>University of California, San Diego</h2>
+                    {/* <h2>University of California, San Diego</h2> */}
                     <h1>Yi-Ting, Wang</h1>
                     <h3>
                         <ArrowRightIcon className="iconArrRight"/>
                         <span ref={textRef}></span>
                     </h3>
                 </div>
-                <a href="#about">
+                <a href="#background">
                     <ExpandMoreIcon className="iconExpand"/>
                     {/* use image as a button to go to project section */}
                     {/* <img arc="assets/xxx.jpg" alt=""></img> */}
