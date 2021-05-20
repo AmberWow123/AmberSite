@@ -1,9 +1,9 @@
-import AboutList from "../2_bg_list/BgList";
+import BgList from "../2_bg_list/BgList";
 import "./about.scss"
 import { useEffect, useState } from "react";
 
 import {
-    aboutmeData, educationData, experienceData
+    locationData, educationData, experienceData
 } from "../data";
 
 
@@ -11,13 +11,13 @@ import styled from "styled-components";
 
 export default function About() {
 
-    // if selected (aboutme, education, experience)
-    const [selected, setSelected] = useState("aboutme")
+    // if selected (location, education, experience)
+    const [selected, setSelected] = useState("location")
 
     const list = [
         {
-            id: "aboutme",
-            title: "About Me",
+            id: "location",
+            title: "Location",
         },
         {
             id: "education",
@@ -31,10 +31,10 @@ export default function About() {
 
     const [data, setData] = useState([])
     useEffect(() => {
-        // change data list depends on what you select (aboutme, education, experience)
+        // change data list depends on what you select (location, education, experience)
         switch(selected) {
-            case "aboutme":
-                setData(aboutmeData);
+            case "location":
+                setData(locationData);
                 break;
             case "education":
                 setData(educationData);
@@ -43,7 +43,7 @@ export default function About() {
                 setData(experienceData);
                 break;
             default:
-                setData(aboutmeData);
+                setData(locationData);
         }
 
     }, [selected])  //  whenever you change what you select,
@@ -55,14 +55,14 @@ export default function About() {
             <ul>
                 {/* item means each element in this list
                     then, it passes title of each element
-                    to AboutList.jsx */}
+                    to BgList.jsx */}
                 {list.map( item => (
-                    <AboutList 
+                    <BgList 
                         title = {item.title} 
                         active = {selected == item.id} 
                         setSelected = {setSelected}
                         id = {item.id}
-                        // pass whatever we need for AboutList.jsx
+                        // pass whatever we need for BgList.jsx
                     />
                 ))}
             </ul>

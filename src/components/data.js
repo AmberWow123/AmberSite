@@ -1,4 +1,4 @@
-export const aboutmeData = [
+export const locationData = [
     {
         id:1,
         title: "Taiwan",
