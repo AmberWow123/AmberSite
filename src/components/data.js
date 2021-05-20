@@ -14,17 +14,17 @@ export const aboutmeData = [
 export const educationData = [
     {
         id:1,
-        title: "college",
+        title: "College",
         img: "https://is2-ssl.mzstatic.com/image/thumb/Purple114/v4/25/f3/14/25f31425-4837-2a9b-736e-dba6d0a0d058/source/512x512bb.jpg",
     },
     {
         id:2,
-        title: "undergrad",
+        title: "Undergraduate",
         img: "https://th.bing.com/th/id/R1921a746eec1e5595b0c3e1d127100ba?rik=60rpoS%2fL9v3m4w&pid=ImgRaw",
     },
     {
         id:3,
-        title: "grad",
+        title: "Graduate",
         img: "https://th.bing.com/th/id/R1921a746eec1e5595b0c3e1d127100ba?rik=60rpoS%2fL9v3m4w&pid=ImgRaw",
     },
 ];
@@ -32,12 +32,12 @@ export const educationData = [
 export const experienceData = [
     {
         id:1,
-        title: "mathTutor",
+        title: "Math Tutor",
         img: "https://www.deanza.edu/autotech/images/logo-scs.gif",
     },
     {
         id:2,
-        title: "csTutor",
+        title: "CS Tutor",
         img: "https://www.deanza.edu/autotech/images/logo-scs.gif",
     },
 ];

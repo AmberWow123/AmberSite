@@ -2,9 +2,13 @@ import AboutList from "../2_about_list/AboutList";
 import "./about.scss"
 import { useEffect, useState } from "react";
 
+import {
+    aboutmeData, educationData, experienceData
+} from "../data";
+
 export default function About() {
 
-    // if selected
+    // if selected (aboutme, education, experience)
     const [selected, setSelected] = useState("aboutme")
 
     const list = [
@@ -21,6 +25,26 @@ export default function About() {
             title: "Experience",
         },
     ];
+
+    const [data, setData] = useState([])
+    useEffect(() => {
+        // change data list depends on what you select (aboutme, education, experience)
+        switch(selected) {
+            case "aboutme":
+                setData(aboutmeData);
+                break;
+            case "education":
+                setData(educationData);
+                break;
+            case "experience":
+                setData(experienceData);
+                break;
+            default:
+                setData(aboutmeData);
+        }
+
+    }, [selected])  //  whenever you change what you select,
+                    //  it will run the useeffect
 
     return (
         <div className="about" id="about">
@@ -39,31 +63,16 @@ export default function About() {
                     />
                 ))}
             </ul>
+            {/* below is for data list */}
             <div className="container">
-                <div className="item">
-                    <img src="https://th.bing.com/th/id/R1921a746eec1e5595b0c3e1d127100ba?rik=60rpoS%2fL9v3m4w&pid=ImgRaw" alt=""/>
-                    <h3>UCSD</h3>
-                </div>
-                <div className="item">
-                    <img src="https://th.bing.com/th/id/R1921a746eec1e5595b0c3e1d127100ba?rik=60rpoS%2fL9v3m4w&pid=ImgRaw" alt=""/>
-                    <h3>UCSD</h3>
-                </div>
-                <div className="item">
-                    <img src="https://th.bing.com/th/id/R1921a746eec1e5595b0c3e1d127100ba?rik=60rpoS%2fL9v3m4w&pid=ImgRaw" alt=""/>
-                    <h3>UCSD</h3>
-                </div>
-                <div className="item">
-                    <img src="https://th.bing.com/th/id/R1921a746eec1e5595b0c3e1d127100ba?rik=60rpoS%2fL9v3m4w&pid=ImgRaw" alt=""/>
-                    <h3>UCSD</h3>
-                </div>
-                <div className="item">
-                    <img src="https://th.bing.com/th/id/R1921a746eec1e5595b0c3e1d127100ba?rik=60rpoS%2fL9v3m4w&pid=ImgRaw" alt=""/>
-                    <h3>UCSD</h3>
-                </div>
-                <div className="item">
-                    <img src="https://th.bing.com/th/id/R1921a746eec1e5595b0c3e1d127100ba?rik=60rpoS%2fL9v3m4w&pid=ImgRaw" alt=""/>
-                    <h3>UCSD</h3>
-                </div>
+                {data.map((d) => (
+                    <div className="item">
+                        <img 
+                            src={d.img} 
+                            alt=""/>
+                        <h3>{d.title}</h3>
+                    </div>
+                ))}
             </div>
         </div>
     )
