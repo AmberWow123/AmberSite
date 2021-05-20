@@ -48,9 +48,10 @@
             h3{
                 font-size: 30px;
 
+
                 span{
                     font-size: inherit;
-                    color: lightblue;
+                    color: rgba(22, 148, 190, 0.863);
                 }
             }
         }
@@ -60,7 +61,7 @@
             bottom: 10px;   // distance between screen bottom and expand arrow
             left: 40%;      // position of expand arrow
 
-            .icon{
+            .iconExpand{
 
                 width: 30px;
                 animation: arrowBlink 2s infinite;

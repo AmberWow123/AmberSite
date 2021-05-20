@@ -1,6 +1,6 @@
 import "./intro.scss"
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import { init } from 'ityped';
+import ArrowRightIcon from '@material-ui/icons/ArrowRight';import { init } from 'ityped';
 import { useEffect, useRef } from "react";
 
 export default function Intro() {
@@ -23,12 +23,15 @@ export default function Intro() {
             </div>
             <div className="right">
                 <div className="wrapper">
-                    <h2>UCSD Computer Science Undergrad</h2>
+                    <h2>University of California, San Diego</h2>
                     <h1>Yi-Ting, Wang</h1>
-                    <h3>sdasdasd <span ref={textRef}></span></h3>
+                    <h3>
+                        <ArrowRightIcon className="iconArrRight"/>
+                        <span ref={textRef}></span>
+                    </h3>
                 </div>
                 <a href="#skills">
-                    <ExpandMoreIcon className="icon"/>
+                    <ExpandMoreIcon className="iconExpand"/>
                     {/* use image as a button to go to project section */}
                     {/* <img arc="assets/xxx.jpg" alt=""></img> */}
                 </a>
