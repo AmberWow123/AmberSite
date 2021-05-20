@@ -3,7 +3,7 @@ import "./background.scss"
 import { useEffect, useState } from "react";
 
 import {
-    locationData, educationData, experienceData
+    locationData, educationData, experienceData, achievementData
 } from "../data";
 
 
@@ -27,6 +27,10 @@ export default function Backgound() {
             id: "experience",
             title: "Experience",
         },
+        {
+            id: "achievements",
+            title: "Achievements",
+        },
     ];
 
     const [data, setData] = useState([])
@@ -41,6 +45,9 @@ export default function Backgound() {
                 break;
             case "experience":
                 setData(experienceData);
+                break;
+            case "achievements":
+                setData(achievementData);
                 break;
             default:
                 setData(locationData);
