@@ -6,6 +6,9 @@ import {
     aboutmeData, educationData, experienceData
 } from "../data";
 
+
+import styled from "styled-components";
+
 export default function About() {
 
     // if selected (aboutme, education, experience)
