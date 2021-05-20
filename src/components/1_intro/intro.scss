@@ -1,3 +1,78 @@
 .intro{
-    background-color: plum;
+    background-color: white;
+    display: flex;
+
+    .left{
+        flex: 0.5;          // (left's flex + right's flex) = 1
+        overflow: hidden;   // hide scroll bar
+
+        .imgContainer{
+            overflow: hidden;
+            width: 700px;
+            height: 700px;
+            // background-color: crimson;
+            border-radius: 50%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            float: right;
+
+            img{
+                height: 100%;
+            }
+        }
+    }
+
+    .right{
+        flex: 0.5;
+        position: relative;
+
+        .wrapper{
+            width: 100%;
+            height: 100%;
+
+            padding-left: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h1{
+                font-size: 60px;
+                margin: 10px 0;
+            }
+
+            h2{
+                font-size: 35px;
+            }
+
+            h3{
+                font-size: 30px;
+
+                span{
+                    font-size: inherit;
+                    color: lightblue;
+                }
+            }
+        }
+
+        a{
+            position: absolute;
+            bottom: 10px;   // distance between screen bottom and expand arrow
+            left: 40%;      // position of expand arrow
+
+            .icon{
+
+                width: 30px;
+                animation: arrowBlink 2s infinite;
+            }
+
+            // after 2s, opacity will be 0
+            @keyframes arrowBlink {
+                100% {
+                    opacity: 0;
+                }
+            }
+        }
+    }
+    
 }
