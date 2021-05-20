@@ -1,7 +1,11 @@
 import AboutList from "../2_about_list/AboutList";
 import "./about.scss"
+import { useEffect, useState } from "react";
 
 export default function About() {
+
+    // if selected
+    const [selected, setSelected] = useState("aboutme")
 
     const list = [
         {
@@ -26,7 +30,13 @@ export default function About() {
                     then, it passes title of each element
                     to AboutList.jsx */}
                 {list.map( item => (
-                    <AboutList title = {item.title} />
+                    <AboutList 
+                        title = {item.title} 
+                        active = {selected == item.id} 
+                        setSelected = {setSelected}
+                        id = {item.id}
+                        // pass whatever we need for AboutList.jsx
+                    />
                 ))}
             </ul>
             <div className="container">
