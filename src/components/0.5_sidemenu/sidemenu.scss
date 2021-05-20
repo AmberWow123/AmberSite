@@ -26,4 +26,34 @@
         //                              when side menu is about to hide back beyond the right margin
         //                              there won't be any transition, the side menu will just disappear, unsmooth...
     }
+
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-size: 30px;
+        font-weight: 300;
+        color: white;
+        width: 60%;
+
+        li{
+            margin-bottom: 25px;    // to separate each section name
+            a{
+                font-size: inherit;
+                color: inherit;
+                text-decoration: none; // get rid of underlines
+            }
+
+            // if cursor move on the "section name"
+            // it will have a effect of bold
+            // but then, if we don't set width
+            // the whole ul will be moving a bit 
+            // since the longest one was the default width
+            // if it is bold, the width will be change (I guess)
+            &:hover{
+                font-weight: 500;
+            }
+        }
+    }
+
 }
