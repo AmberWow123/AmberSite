@@ -1,5 +1,6 @@
 import "./intro.scss"
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import { init } from 'ityped'
 
 export default function Intro() {
     return (
