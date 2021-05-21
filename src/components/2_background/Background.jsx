@@ -60,7 +60,7 @@ export default function Backgound({modalOpen, setModalOpen, set_modal_title, set
 
     return (
         <div className="background" id="background">
-            <h1>Yi-Ting, Wang</h1>
+            <h1>.</h1>
             <ul>
                 {/* item means each element in this list
                     then, it passes title of each element
@@ -90,6 +90,7 @@ export default function Backgound({modalOpen, setModalOpen, set_modal_title, set
                         <img 
                             src={d.img} 
                             alt=""
+                            
                         />
                         <h3>{d.title}</h3>
                     </div>

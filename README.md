@@ -2,6 +2,9 @@
 1. After opening the side menu, implement to close the side menu by clicking any places than the close icon
 2. After opening the modal window, implement to close the modal window by clicking any places than the close icon
 3. Added 'About Me' section
+4. Prob modified the content css for Background section
+5. Think about Modal pop-up window: title, years, description, img, content (like how to present would be the best)
+
 
 
 # Getting Started with Create React App
