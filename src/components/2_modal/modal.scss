@@ -13,26 +13,68 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    // justify-content: center;
 
     top: 90%;
 
-    .closeicon{
-        cursor: pointer;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        width: 32px;
-        height: 32px;
-        padding: 0;
-        z-index: 10;
+
+    .modalHeader{
+
+        .modalTitle{
+            margin-top: 10%;
+            margin-bottom: 5%;
+            text-align: center;
+            font-weight: 400;
+            font-size: 25px;
+            text-transform: uppercase;
+            font-family: "Lato", sans-serif;
+        }
+
+        .closeicon{
+            cursor: pointer;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 32px;
+            height: 32px;
+            padding: 0;
+            z-index: 10;
+        }
     }
+    
+    .modalBody{
+        // width: 80%;
+        // height: 80%;
+        // display:;
+        justify-content: center;
+        align-items: center;
+        .modalImg{
+            max-width: 100%;
+            
+        }
+
+        .modalContent{
+            // height: 40%;
+            font-size: 15px;
+            margin: 0px 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            line-height: 1.8;
+            color: #141414;
+        }
+
+    }
+    
 
     &.active{
         top: 0; // let it show up 
         z-index: 2;     // since image's z-index is 1
                         // we need to be larger than that
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        
+
     }
 
 }
