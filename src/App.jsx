@@ -14,7 +14,9 @@ function App() {
   // function for open menu (light <-> dark mode switching)
   const [menuOpen, setMenuOpen] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
-
+  const [modaltitle, setmodaltitle] = useState([]);
+  const [modalimg, setmodalimg] = useState([]);
+  const [modalcontent, setmodalcontent] = useState([]);
   return(
     <div className="app">
       {/* with 'menuOpen={menuOpen} setMenuOpen={setMenuOpen}'
@@ -23,9 +25,17 @@ function App() {
       <SideMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <div className="sections">
         <Intro/>
-        <Background modalOpen={modalOpen} setModalOpen={setModalOpen}/>
+        <Background modalOpen={modalOpen} setModalOpen={setModalOpen}
+          set_modal_title={setmodaltitle}
+          set_modal_img={setmodalimg}
+          set_modal_content={setmodalcontent}
+        />
         <div className="modaldiv">
-          <Modal modalOpen={modalOpen} setModalOpen={setModalOpen}/>
+          <Modal modalOpen={modalOpen} setModalOpen={setModalOpen}
+            title={modaltitle}
+            imgsrc={modalimg}
+            content={modalcontent}
+          />
         </div>
       {/* </div> */}
       {/* since the size of modal is not the same as others */}

@@ -8,8 +8,8 @@ import {
 
 
 import styled from "styled-components";
-
-export default function Backgound({modalOpen, setModalOpen}) {
+import Modal from "../2_modal/Modal";
+export default function Backgound({modalOpen, setModalOpen, set_modal_title, set_modal_img, set_modal_content}) {
 
     // if selected (location, education, experience)
     const [selected, setSelected] = useState("location")
@@ -78,7 +78,14 @@ export default function Backgound({modalOpen, setModalOpen}) {
             {/* below is for data list */}
             <div className="container">
                 {data.map((d) => (
-                    <div className="item" onClick={() => setModalOpen(!modalOpen)}>
+                    
+                    <div className="item" onClick={() => {
+                        setModalOpen(!modalOpen);
+                        set_modal_title(d.modalTitle);
+                        set_modal_img(d.modalImg);
+                        set_modal_content(d.modalContent);
+                    }}>
+                        
                         <img 
                             src={d.img} 
                             alt=""
@@ -88,6 +95,37 @@ export default function Backgound({modalOpen, setModalOpen}) {
                     </div>
                 ))}
             </div>
+            
+                
+            {/* {data.map((d) => (
+                <div className="container">        
+                    <div className="item" onClick={() => {
+                        setModalOpen(!modalOpen);
+                        modal_title=d.modalTitle;
+                        modal_img=d.modalImg;
+                        modal_content=d.modalContent;
+                    }}>
+                        
+                        <img 
+                            src={d.img} 
+                            alt=""
+                        />
+                        <h3>{d.title}</h3>
+                    </div>
+                </div>
+            ))} */}
+            
+
+
+
+
+            {/* <div className="modaldiv">
+                <Modal modalOpen={modalOpen} setModalOpen={setModalOpen}
+                    title={modal_title}
+                    imgsrc={modal_img}
+                    content={modal_content}
+                />
+            </div> */}
         </div>
     )
 }
