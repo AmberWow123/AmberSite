@@ -1,3 +1,9 @@
+## Notes
+1. After opening the side menu, implement to close the side menu by clicking any places than the close icon
+2. After opening the modal window, implement to close the modal window by clicking any places than the close icon
+3. Added 'About Me' section
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
