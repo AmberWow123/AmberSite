@@ -3,13 +3,17 @@ import "./modal.scss"
 import CloseIcon from '@material-ui/icons/Close';
 
 
-export default function modal({modalOpen, setModalOpen, title, imgsrc, content}) {
+export default function modal({modalOpen, setModalOpen, title, des, imgsrc, content}) {
     return (
         <div className={"modal " + (modalOpen && "active")}>
             
             <div className="modalHeader">
                 <div className="modalTitle">
                     {title}
+                </div>
+                <div className="modaldes">
+                    {des}
+                   
                 </div>
                 <CloseIcon
                     className="closeicon"

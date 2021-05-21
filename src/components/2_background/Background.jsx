@@ -9,7 +9,7 @@ import {
 
 import styled from "styled-components";
 import Modal from "../2_modal/Modal";
-export default function Backgound({modalOpen, setModalOpen, set_modal_title, set_modal_img, set_modal_content}) {
+export default function Backgound({modalOpen, setModalOpen, set_modal_title, set_modal_des, set_modal_img, set_modal_content}) {
 
     // if selected (location, education, experience)
     const [selected, setSelected] = useState("location")
@@ -82,6 +82,7 @@ export default function Backgound({modalOpen, setModalOpen, set_modal_title, set
                     <div className="item" onClick={() => {
                         setModalOpen(!modalOpen);
                         set_modal_title(d.modalTitle);
+                        set_modal_des(d.modalDescription);
                         set_modal_img(d.modalImg);
                         set_modal_content(d.modalContent);
                     }}>
@@ -89,7 +90,6 @@ export default function Backgound({modalOpen, setModalOpen, set_modal_title, set
                         <img 
                             src={d.img} 
                             alt=""
-                                
                         />
                         <h3>{d.title}</h3>
                     </div>

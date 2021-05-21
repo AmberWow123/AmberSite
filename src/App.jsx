@@ -14,9 +14,13 @@ function App() {
   // function for open menu (light <-> dark mode switching)
   const [menuOpen, setMenuOpen] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
+  // for modal popup window
   const [modaltitle, setmodaltitle] = useState([]);
   const [modalimg, setmodalimg] = useState([]);
   const [modalcontent, setmodalcontent] = useState([]);
+  const [modaldes, setmodaldes] = useState([]);
+
+
   return(
     <div className="app">
       {/* with 'menuOpen={menuOpen} setMenuOpen={setMenuOpen}'
@@ -27,12 +31,17 @@ function App() {
         <Intro/>
         <Background modalOpen={modalOpen} setModalOpen={setModalOpen}
           set_modal_title={setmodaltitle}
+          set_modal_des={setmodaldes}
           set_modal_img={setmodalimg}
           set_modal_content={setmodalcontent}
+          // set the info for modal popup in Background
+          // since we select which item of either 'Location', 'Eduaction', 'Experience', or 'Achievements'
+          // in Background, we only know which data of modaltitle, modalimg, and modalcontent in Background
         />
         <div className="modaldiv">
           <Modal modalOpen={modalOpen} setModalOpen={setModalOpen}
             title={modaltitle}
+            des={modaldes}
             imgsrc={modalimg}
             content={modalcontent}
           />

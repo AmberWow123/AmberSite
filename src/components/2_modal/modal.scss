@@ -20,13 +20,14 @@
     top: 700px;
 
     overflow: hidden;
+    
 
     .modalHeader{
 
         .modalTitle{
             margin-top: 3%;
             letter-spacing: 1px;
-            margin-bottom: 2%;
+            margin-bottom: 0.5%;        // keep a little space between title and description
             justify-content: center;
             align-items: center;
             text-align: center;
@@ -34,6 +35,13 @@
             font-size: 25px;
             text-transform: uppercase;
             font-family: "Lato", sans-serif;
+        }
+
+        .modaldes{
+            margin-bottom: 1%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
         }
 
         .closeicon{
@@ -97,7 +105,7 @@
                         // we need to be larger than that
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
         
-
+        transition: all 1.5s ease;
     }
 
 }
