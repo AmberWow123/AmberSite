@@ -11,7 +11,7 @@ export default function SideMenu({menuOpen, setMenuOpen}) {
                     <a href="#intro">Home</a>
                 </li>
                 <li onClick={()=>setMenuOpen(false)}>
-                    <a href="#background">About Me</a>
+                    <a href="#background">Background</a>
                 </li>
                 <li onClick={()=>setMenuOpen(false)}>
                     <a href="#projects">Projects</a>
