@@ -8,10 +8,13 @@ import Background from "./components/2_background/Background";
 import "./app.scss"
 import { useState } from "react";
 import SideMenu from "./components/0.5_sidemenu/SideMenu";
+import Modal from "./components/2_modal/Modal";
 
 function App() {
   // function for open menu (light <-> dark mode switching)
   const [menuOpen, setMenuOpen] = useState(false);
+  const [modalOpen, setModalOpen] = useState(false);
+
   return(
     <div className="app">
       {/* with 'menuOpen={menuOpen} setMenuOpen={setMenuOpen}'
@@ -20,7 +23,16 @@ function App() {
       <SideMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <div className="sections">
         <Intro/>
-        <Background/>
+        <Background modalOpen={modalOpen} setModalOpen={setModalOpen}/>
+        <div className="modaldiv">
+          <Modal modalOpen={modalOpen} setModalOpen={setModalOpen}/>
+        </div>
+      {/* </div> */}
+      {/* since the size of modal is not the same as others */}
+      {/* <div className="modaldiv">
+        <Modal modalOpen={modalOpen} setModalOpen={setModalOpen}/>
+      </div> */}
+      {/* <div className="sections"> */}
         <Projects/>
         <Skills/>
         <Materials/>

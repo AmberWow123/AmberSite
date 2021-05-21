@@ -9,7 +9,7 @@ import {
 
 import styled from "styled-components";
 
-export default function Backgound() {
+export default function Backgound({modalOpen, setModalOpen}) {
 
     // if selected (location, education, experience)
     const [selected, setSelected] = useState("location")
@@ -56,6 +56,8 @@ export default function Backgound() {
     }, [selected])  //  whenever you change what you select,
                     //  it will run the useeffect
 
+    // const [modalOpen, setModalOpen] = useState(false)
+
     return (
         <div className="background" id="background">
             <h1>Yi-Ting, Wang</h1>
@@ -76,10 +78,12 @@ export default function Backgound() {
             {/* below is for data list */}
             <div className="container">
                 {data.map((d) => (
-                    <div className="item">
+                    <div className="item" onClick={() => setModalOpen(!modalOpen)}>
                         <img 
                             src={d.img} 
-                            alt=""/>
+                            alt=""
+                                
+                        />
                         <h3>{d.title}</h3>
                     </div>
                 ))}
