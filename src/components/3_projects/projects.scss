@@ -79,7 +79,12 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    
+                    overflow: hidden;       // hide the scroll bar
+
+                    img{
+                        width: 400px;
+                        // transform: rotate(-10deg);
+                    }
                 }
             }
         }

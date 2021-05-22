@@ -20,7 +20,10 @@ export default function Projects() {
                             </div>
                         </div>
                         <div className="right">
-
+                            <img
+                                src="assets/project_Covid-19.jpg"
+                                alt="" 
+                            />
                         </div>
                     </div>
                 </div>
