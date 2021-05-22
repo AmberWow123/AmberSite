@@ -1,4 +1,4 @@
-import { MenuOpen } from "@material-ui/icons"
+// import { MenuOpen } from "@material-ui/icons"
 import "./modal.scss"
 import CloseIcon from '@material-ui/icons/Close';
 

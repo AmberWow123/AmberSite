@@ -7,8 +7,8 @@ import {
 } from "../data";
 
 
-import styled from "styled-components";
-import Modal from "../2_modal/Modal";
+// import styled from "styled-components";
+// import Modal from "../2_modal/Modal";
 export default function Backgound({modalOpen, setModalOpen, set_modal_title, set_modal_des, set_modal_img, set_modal_content}) {
 
     // if selected (location, education, experience)
@@ -68,7 +68,8 @@ export default function Backgound({modalOpen, setModalOpen, set_modal_title, set
                 {list.map( item => (
                     <BgList 
                         title = {item.title} 
-                        active = {selected == item.id} 
+                        // active = {selected == item.id} 
+                        active = {selected === item.id} 
                         setSelected = {setSelected}
                         id = {item.id}
                         // pass whatever we need for BgList.jsx

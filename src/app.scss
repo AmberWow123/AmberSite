@@ -24,9 +24,8 @@
             height: calc(100vh - 70px);
             scroll-snap-align: start;
         }
-        // comment out because some sections are extend page
-        // and some are one page
-
+        
+        // only for Modal
         .modaldiv{
             height: 0;
             width: 100%;
