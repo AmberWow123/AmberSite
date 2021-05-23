@@ -3,12 +3,30 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+
+    .arrow{
+        height: 70px;
+        position: absolute;
+        cursor: pointer;
+
+        &.left{
+            left: 100px;
+            transform: rotateY(180deg);
+        }
+
+        &.right{
+            right: 100px;
+            
+        }
+    }
 
     .slider{
         height: 350px;
         display: flex;
         position: absolute;
         left: 0;
+        transition: all 1s ease;
 
         .container{
             width: 100vw;   // contain the whole screen
@@ -28,19 +46,21 @@
                 // split the container into 12 pieces (4 + 8 = 12)
                 .left{
                     flex: 4;
-                    height: 80%;   // can only see color after we set height
+                    height: 90%;   // can only see color after we set height
                     
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    
 
                     .leftContainer{
                         width: 90%;
-                        height: 70%;
+                        height: 90%;
                         display: flex;
                         flex-direction: column;
                         justify-content: space-between;
 
+                        // overflow: hidden;
                         .imgContainer{
                             width: 40px;
                             height: 40px;
@@ -64,7 +84,7 @@
                         }
 
                         // for link of project (GitHub)
-                        span{
+                        span, a{
                             font-size: 12px;
                             font-weight: 600;
                             text-decoration: underline;
