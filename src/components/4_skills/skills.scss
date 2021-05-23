@@ -11,6 +11,7 @@
 
     .container{
         margin-top: 100px;
+
         width: 70%;
         // height: auto;
         display: flex;
@@ -22,6 +23,7 @@
             width: 100px;
             height: 100px;
             border-radius: 20px;
+            background-color: white;
             box-shadow: 0px 0px 15px -8px black;
             margin: 10px 20px;
             display: flex;
@@ -31,12 +33,32 @@
             align-items: center;
             justify-content: center;
             position: relative;
+            cursor: pointer;
 
+            h3{
+               position: absolute;
+               font-size: 18px;
+            //    color: white;
+                opacity: 0;
+            }
 
             img{
                 height: 100%;
                 width: 100%;
+                z-index: 1;
                 object-fit: cover;
+            }
+
+            &:hover{
+                
+                h3{
+                    opacity: 100%;
+                }
+
+                img{
+                    opacity: 0.2;
+                    z-index: 0;
+                }
             }
         }
     }

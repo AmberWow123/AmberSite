@@ -55,16 +55,21 @@ export default function Skills() {
         },
         {
             id: "11",
+            title: "GitHub",
+            imgsrc: "./assets/skills_github.png",
+        },
+        {
+            id: "12",
             title: "JSP",
             imgsrc: "./assets/skills_jsp.png",
         },
         {
-            id: "12",
-            title: "Apache Tomcat",
+            id: "13",
+            title: "Tomcat",
             imgsrc: "./assets/skills_tomcat.png",
         },
         {
-            id: "13",
+            id: "14",
             title: "Android",
             imgsrc: "./assets/skills_android_studio.png",
         },
@@ -75,30 +80,16 @@ export default function Skills() {
         <div className="skills" id="skills">
             <h1>Skills</h1>
             <div className="container">
-                <div className="item">
-                    <img src="./assets/skills_python.png" alt=""/>
-                </div>
-                <div className="item">
-                    <img src="./assets/skills_python.png" alt=""/>
-                </div>
-                <div className="item">
-                    <img src="./assets/skills_python.png" alt=""/>
-                </div>
-                <div className="item">
-                    <img src="./assets/skills_python.png" alt=""/>
-                </div>
-                <div className="item">
-                    <img src="./assets/skills_python.png" alt=""/>
-                </div>
-                <div className="item">
-                    <img src="./assets/skills_python.png" alt=""/>
-                </div>
-                <div className="item">
-                    <img src="./assets/skills_python.png" alt=""/>
-                </div>
-                <div className="item">
-                    <img src="./assets/skills_python.png" alt=""/>
-                </div> 
+
+                {data.map( (d) => (
+                    <div className="item">
+                        <img 
+                            src={d.imgsrc} 
+                            alt=""
+                        />
+                        <h3>{d.title}</h3>
+                    </div>
+                ))}
             </div>
         </div>
     )
