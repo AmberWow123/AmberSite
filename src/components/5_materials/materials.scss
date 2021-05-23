@@ -1,3 +1,26 @@
 .materials{
     background-color: lightcoral;
+    display: flex;
+
+    .left{
+        flex: 5;
+    }
+
+    .right{
+        flex: 5;
+        overflow: hidden;
+        // position: absolute;
+        iframe{
+            
+            width: 100%;
+            height: 100%;
+            // position: relative;
+            // display: block;
+            // border: none;
+            // overflow-y: hidden;
+            // overflow-x: hidden;
+        }
+    }
+
+    
 }
