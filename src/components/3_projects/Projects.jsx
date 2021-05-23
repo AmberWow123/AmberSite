@@ -8,7 +8,7 @@ export default function Projects() {
     const data =[
         {
             id: "1",
-            icon: "./assets/project_mobile.png", 
+            icon: "./assets/project_android_studio.png", 
             title: "Drifting Mobile App", 
             tool: "Java | Firebase | Android Studio",
             desc: "Developed an android application using Firebase as our database and Android Studio for designing the user interface to help people social during the COVID-19 pandemic.",
