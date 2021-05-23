@@ -103,7 +103,9 @@
 
                     img{
                         width: 400px;
+                        height: 270px;
                         // transform: rotate(-10deg);
+                        object-fit: cover;
                     }
                 }
             }
