@@ -4,6 +4,7 @@
 3. Added 'About Me' section
 4. Prob modified the content css for Background section
 5. Think about Modal pop-up window: title, years, description, img, content (like how to present would be the best)
+6. menu bar: add github, linkedin
 
 
 
