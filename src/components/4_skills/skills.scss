@@ -19,6 +19,7 @@
         justify-content: center;
         flex-wrap: wrap;
 
+
         .item{
             width: 100px;
             height: 100px;
@@ -34,6 +35,7 @@
             justify-content: center;
             position: relative;
             cursor: pointer;
+            transition: all 1s ease;
 
             h3{
                position: absolute;
@@ -50,7 +52,7 @@
             }
 
             &:hover{
-                
+                transform: scale(1.15);
                 h3{
                     opacity: 100%;
                 }
