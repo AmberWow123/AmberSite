@@ -96,38 +96,7 @@ export default function Backgound({modalOpen, setModalOpen, set_modal_title, set
                         <h3>{d.title}</h3>
                     </div>
                 ))}
-            </div>
-            
-                
-            {/* {data.map((d) => (
-                <div className="container">        
-                    <div className="item" onClick={() => {
-                        setModalOpen(!modalOpen);
-                        modal_title=d.modalTitle;
-                        modal_img=d.modalImg;
-                        modal_content=d.modalContent;
-                    }}>
-                        
-                        <img 
-                            src={d.img} 
-                            alt=""
-                        />
-                        <h3>{d.title}</h3>
-                    </div>
-                </div>
-            ))} */}
-            
-
-
-
-
-            {/* <div className="modaldiv">
-                <Modal modalOpen={modalOpen} setModalOpen={setModalOpen}
-                    title={modal_title}
-                    imgsrc={modal_img}
-                    content={modal_content}
-                />
-            </div> */}
+            </div> 
         </div>
     )
 }
