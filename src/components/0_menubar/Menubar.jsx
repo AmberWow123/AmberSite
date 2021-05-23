@@ -2,6 +2,8 @@ import "./menubar.scss"
 // import PersonIcon from '@material-ui/icons/Person';
 // import MailIcon from '@material-ui/icons/Mail';
 import {Person, Mail} from "@material-ui/icons"
+import GitHubIcon from '@material-ui/icons/GitHub';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 export default function Menubar({ menuOpen, setMenuOpen }) {
     return (
@@ -18,6 +20,19 @@ export default function Menubar({ menuOpen, setMenuOpen }) {
                     <div className="itemContainer">
                         <Mail className="icon"/>
                         <span>eatingwow@gmail.com</span>
+                    </div>
+                    <div className="itemContainer">
+                        <GitHubIcon className="icon"/>
+                        <a href="https://github.com/AmberWow123">
+                            <span>AmberWow123</span>
+                        </a>
+                    </div>
+                    <div className="itemContainer">
+                    <LinkedInIcon className="icon"/>
+                        <a href="https://www.linkedin.com/in/yi-ting-wang-633387147/">
+                            <span>Yi-Ting Wang</span>
+                        </a>
+                        
                     </div>
                 </div>
                 

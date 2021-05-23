@@ -36,16 +36,23 @@
                 align-items: center;
                 margin-left: 30px;
 
-
                 .icon{
                     font-size: 18px;
                     margin-right: 5px; // hv some space between icons and its corresponding contents
                 }
+                
+                a{
+                    color:inherit;
+                    text-decoration: none;                    
+    
+                    
 
-                span{
-                    font-size: 15px;
-                    font-weight: 500;
+                    span{
+                        font-size: 15px;
+                        font-weight: 500;
+                    }
                 }
+                
             }
         }
 
