@@ -35,7 +35,7 @@
             justify-content: center;
             color: white;
             position: relative;
-            transition: all 0.5s ease;  // animation for hover
+            transition: all 1s ease;  // animation for hover
             cursor: pointer;
 
             h3{
@@ -53,6 +53,9 @@
             // when cursor moves to right above the image
             &:hover{
                 background-color: $mainColor;
+                
+                transform: scale(1.1);
+                
                 img{
                     opacity: 0.2;
                     z-index: 0;     // image will be the last one
