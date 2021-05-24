@@ -67,6 +67,7 @@ export default function Materials() {
             </div>
             <div className="middle">
                 <iframe 
+                    title={selected}
                     src={fileSrc}>
                     className="viewer"
                 </iframe>
