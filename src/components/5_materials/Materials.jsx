@@ -7,12 +7,12 @@ export default function Materials() {
         {
             id: "resume",
             title: "Resume",
-            filesrc: "assets/materials_resume.pdf",
+            filesrc: "assets/Resume_YiTingWang.pdf",
         },
         {
             id: "履歷",
             title: "履歷",
-            filesrc: "assets/materials_resume.pdf",
+            filesrc: "assets/Resume_YiTingWang.pdf",
         },
     ];
 
@@ -30,15 +30,15 @@ export default function Materials() {
     ];
 
     const [selected, setSelected] = useState("resume")
-    const [fileSrc, setFileSrc] = useState("assets/materials_resume.pdf");
+    const [fileSrc, setFileSrc] = useState("assets/Resume_YiTingWang.pdf");
 
     useEffect(() => {
         switch(selected) {
             case "resume":
-                setFileSrc("assets/materials_resume.pdf");
+                setFileSrc("assets/Resume_YiTingWang.pdf");
                 break;
             case "履歷":
-                setFileSrc("assets/materials_resume.pdf");
+                setFileSrc("assets/Resume_YiTingWang.pdf");
                 break;
             case "datranscript":
                 setFileSrc("assets/materials_DA_transcript.pdf");
@@ -47,7 +47,7 @@ export default function Materials() {
                 setFileSrc("assets/materials_UCSD_transcript.pdf");
                 break;
             default:
-                setFileSrc("assets/materials_resume.pdf");
+                setFileSrc("assets/Resume_YiTingWang.pdf");
         }
     }, [selected])
 
