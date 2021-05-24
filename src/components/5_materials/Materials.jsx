@@ -56,7 +56,7 @@ export default function Materials() {
             <div className="left">    
                 <div className="leftContainer">
                     {leftdata.map( (ld) => (
-                        <li className={(selected === ld.id) ? "liside active" : "liside"}
+                        <li className={(selected === ld.id) ? "li active" : "liside"}
                             onClick={() => setSelected(ld.id)}
                         >
                             {ld.title}
@@ -75,7 +75,7 @@ export default function Materials() {
             <div className="right">
                 <div className="rightContainer">
                     {rightdata.map( (rd) => (
-                        <li className={(selected === rd.id) ? "liside active" : "liside"}
+                        <li className={(selected === rd.id) ? "li active" : "liside"}
                             onClick={() => setSelected(rd.id)}
                         >
                         {rd.title}
