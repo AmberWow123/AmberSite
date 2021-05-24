@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/AmberSite/static/css/main.93aa09e3.chunk.css",
+    "main.js": "/AmberSite/static/js/main.01a4eb89.chunk.js",
+    "main.js.map": "/AmberSite/static/js/main.01a4eb89.chunk.js.map",
+    "runtime-main.js": "/AmberSite/static/js/runtime-main.7b3db46d.js",
+    "runtime-main.js.map": "/AmberSite/static/js/runtime-main.7b3db46d.js.map",
+    "static/js/2.41a65261.chunk.js": "/AmberSite/static/js/2.41a65261.chunk.js",
+    "static/js/2.41a65261.chunk.js.map": "/AmberSite/static/js/2.41a65261.chunk.js.map",
+    "index.html": "/AmberSite/index.html",
+    "static/css/main.93aa09e3.chunk.css.map": "/AmberSite/static/css/main.93aa09e3.chunk.css.map",
+    "static/js/2.41a65261.chunk.js.LICENSE.txt": "/AmberSite/static/js/2.41a65261.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7b3db46d.js",
+    "static/js/2.41a65261.chunk.js",
+    "static/css/main.93aa09e3.chunk.css",
+    "static/js/main.01a4eb89.chunk.js"
+  ]
+}
