@@ -19,7 +19,9 @@ export default function Menubar({ menuOpen, setMenuOpen }) {
                     </div>
                     <div className="itemContainer">
                         <Mail className="icon"/>
-                        <span>eatingwow@gmail.com</span>
+                        <a href="mailto:eatingwow@gmail.com">
+                            <span>eatingwow@gmail.com</span>
+                        </a>
                     </div>
                     <div className="itemContainer">
                         <GitHubIcon className="icon"/>
