@@ -1,15 +1,16 @@
 import "./materials.scss"
+import { useEffect, useState } from "react";
 
 export default function Materials() {
 
     const leftdata = [
         {
-            id: "1",
+            id: "resume",
             title: "Resume",
             filesrc: "assets/materials_resume.pdf",
         },
         {
-            id: "2",
+            id: "履歷",
             title: "履歷",
             filesrc: "assets/materials_resume.pdf",
         },
@@ -17,23 +18,47 @@ export default function Materials() {
 
     const rightdata = [
         {
-            id: "1",
+            id: "datranscript",
             title: "De Anza Transcript",
             filesrc: "assets/materials_DA_transcript.pdf",
         },
         {
-            id: "2",
+            id: "ucsdtranscript",
             title: "UCSD Transcript",
             filesrc: "assets/materials_UCSD_transcript.pdf",
         },
     ];
+
+    const [selected, setSelected] = useState("resume")
+    const [fileSrc, setFileSrc] = useState("assets/materials_resume.pdf");
+
+    useEffect(() => {
+        switch(selected) {
+            case "resume":
+                setFileSrc("assets/materials_resume.pdf");
+                break;
+            case "履歷":
+                setFileSrc("assets/materials_resume.pdf");
+                break;
+            case "datranscript":
+                setFileSrc("assets/materials_DA_transcript.pdf");
+                break;
+            case "ucsdtranscript":
+                setFileSrc("assets/materials_UCSD_transcript.pdf");
+                break;
+            default:
+                setFileSrc("assets/materials_resume.pdf");
+        }
+    }, [selected])
 
     return (
         <div className="materials" id="materials">
             <div className="left">    
                 <div className="leftContainer">
                     {leftdata.map( (ld) => (
-                        <li>
+                        <li className={(selected === ld.id) ? "liside active" : "liside"}
+                            onClick={() => setSelected(ld.id)}
+                        >
                             {ld.title}
                         </li>
                     ))}    
@@ -42,7 +67,7 @@ export default function Materials() {
             </div>
             <div className="middle">
                 <iframe 
-                    src="assets/materials_DA_transcript.pdf">
+                    src={fileSrc}>
                     className="viewer"
                 </iframe>
             </div>
@@ -50,9 +75,11 @@ export default function Materials() {
             <div className="right">
                 <div className="rightContainer">
                     {rightdata.map( (rd) => (
-                        <li>
-                            {rd.title}
-                        </li>
+                        <li className={(selected === rd.id) ? "liside active" : "liside"}
+                            onClick={() => setSelected(rd.id)}
+                        >
+                        {rd.title}
+                    </li>
                     ))}
                 </div>
                 
