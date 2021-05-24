@@ -3,10 +3,10 @@
     display: flex;
 
     .left{
-        flex: 5;
+        flex: 2.5;
     }
-
-    .right{
+    
+    .middle{
         flex: 5;
         overflow: hidden;
         // position: absolute;
@@ -20,6 +20,11 @@
             // overflow-y: hidden;
             // overflow-x: hidden;
         }
+    }
+
+    .right{
+        flex: 2.5;
+        
     }
 
     
