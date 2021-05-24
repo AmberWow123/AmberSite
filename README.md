@@ -4,7 +4,10 @@
 3. Added 'About Me' section
 4. Prob modified the content css for Background section
 5. Think about Modal pop-up window: title, years, description, img, content (like how to present would be the best)
-
+6. Finished mobile version
+7. Implement send email functionality on Contact Page.
+8. Modify Intro Page (Prob put a landscape? sth like that)
+9. Think about to get rid of 'scroll-snap-align' functionality
 
 
 # Getting Started with Create React App
