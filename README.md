@@ -9,6 +9,7 @@
 8. Modify Intro Page (Prob put a landscape? sth like that)
 9. Think about to get rid of 'scroll-snap-align' functionality
 10. Modify the 'top' css of Modal pop-up window
+11. Check logo pics on Skills Page
 
 # Getting Started with Create React App
 
