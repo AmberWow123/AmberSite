@@ -1,7 +1,9 @@
 import "./intro.scss"
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import ArrowRightIcon from '@material-ui/icons/ArrowRight';import { init } from 'ityped';
+import ArrowRightIcon from '@material-ui/icons/ArrowRight';
+import { init } from 'ityped';
 import { useEffect, useRef } from "react";
+// import { Navbar } from 'react-bootstrap';
 
 export default function Intro() {
 
