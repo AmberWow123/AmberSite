@@ -9,7 +9,6 @@ import "./app.scss"
 import { useState } from "react";
 import SideMenu from "./components/0.5_sidemenu/SideMenu";
 import Modal from "./components/2_modal/Modal";
-import { Navbar } from "react-bootstrap";
 
 function App() {
   // function for open menu (light <-> dark mode switching)
@@ -26,16 +25,8 @@ function App() {
     <div className="app">
       {/* with 'menuOpen={menuOpen} setMenuOpen={setMenuOpen}'
           means that section varies depends on hamburger clicking */}
-      {/* <Menubar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
-      <SideMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/> */}
-
-      <Navbar bg="dark" variant="dark">
-        <Navbar.Brand>
-          Yi-Ting, Wang
-        </Navbar.Brand>
-      </Navbar>
-
-
+      <Menubar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
+      <SideMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <div className="sections">
         <Intro/>
         <Background modalOpen={modalOpen} setModalOpen={setModalOpen}
